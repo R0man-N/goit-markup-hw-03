@@ -36,11 +36,13 @@ img {
 }
 
 /*===============HEADER====================*/
-.header {}
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
 
 .header-container {
     display: flex;
-    gap: 332px;
+    align-items: center;
 }
 
 .header-navigation {
@@ -71,7 +73,9 @@ img {
 
 .header-menu-list {
     display: flex;
+    align-items: center;
     gap: 40px;
+    margin: auto
 }
 
 .header-link-item {
@@ -93,6 +97,7 @@ img {
 
 .contacts-list {
     display: flex;
+    align-items: center;
 }
 
 .contacts-link-item {
@@ -119,10 +124,13 @@ img {
 .hero-title {
     color: #FFFFFF;
     text-align: center;
+    margin: 0 auto;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+
 }
 
 .hero-btn {
@@ -135,6 +143,14 @@ img {
     letter-spacing: 0.04em;
     text-transform: capitalize;
     cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .hero-btn:hover,
@@ -151,9 +167,16 @@ img {
 
 .visually-hidden {}
 
-.advantages-list {}
+.advantages-list {
+    display: flex;
+    padding-left: 156px;
+    padding-right: 156px;
+    gap: 24px;
+}
 
-.advantages-item {}
+.advantages-item {
+    width: calc((100%-24*3)/4);
+}
 
 .advantages-subtitle {
     color: #2E2F42;
@@ -192,7 +215,17 @@ img {
     text-transform: capitalize;
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: calc((100%-24*3)/4);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFF;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 
 .team-list-item {
     background-color: #FFFFFF;
@@ -231,9 +264,16 @@ img {
     text-transform: capitalize;
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 48px;
+    width: calc((100%-24*2)/3);
+}
 
-.portfolio-item {}
+.portfolio-item {
+    padding: 32px 16px;
+}
 
 .portfolio-name-item {
     color: #2E2F42;
