@@ -38,7 +38,16 @@ img {
 /*===============HEADER====================*/
 .header {}
 
-.header-navigation {}
+.header-container {
+    display: flex;
+    gap: 332px;
+}
+
+.header-navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
 
 .header-logo {
     color: #4D5AE5;
@@ -60,7 +69,10 @@ img {
     text-transform: uppercase;
 }
 
-.header-menu-list {}
+.header-menu-list {
+    display: flex;
+    gap: 40px;
+}
 
 .header-link-item {
     color: #2E2F42;
@@ -79,7 +91,9 @@ img {
     font-style: normal;
 }
 
-.contacts-list {}
+.contacts-list {
+    display: flex;
+}
 
 .contacts-link-item {
     color: #434455;
