@@ -38,12 +38,15 @@ img {
 
 .container {
     width: 1158px;
+    padding: 15px 15px;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+
 }
 
 /*===============HEADER====================*/
 .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
 }
 
@@ -126,8 +129,12 @@ img {
 /*=========================================*/
 
 /*===================HERO==================*/
-.hero {
+.hero {}
+
+.hero-container {
     background: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 292px;
 }
 
 .hero-title {
@@ -139,7 +146,7 @@ img {
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
-
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -178,8 +185,8 @@ img {
 
 .advantages-list {
     display: flex;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     gap: 24px;
 }
 
@@ -192,8 +199,8 @@ img {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    /* 120% */
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .advantages-item-text {
@@ -211,6 +218,7 @@ img {
 /*===============OUR TEAM==================*/
 .team {
     background: #F4F4FD;
+    padding-top: 120px;
 }
 
 .our-team {
@@ -222,6 +230,7 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -238,6 +247,10 @@ img {
 
 .team-list-item {
     background-color: #FFFFFF;
+}
+
+.team-img {
+    padding-bottom: 32px;
 }
 
 .team-name-item {
@@ -260,7 +273,9 @@ img {
 }
 
 /*===============OUR PORTFOLIO==============*/
-.portfolio {}
+.portfolio {
+    padding-top: 120px;
+}
 
 .our-portfolio {
     color: #2E2F42;
@@ -268,9 +283,9 @@ img {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
