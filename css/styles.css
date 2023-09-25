@@ -48,6 +48,7 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #e7e9fc;
+    align-items: center;
 }
 
 .header-container {
@@ -59,6 +60,7 @@ img {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-logo {
@@ -86,7 +88,9 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin: auto
+    margin: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-link-item {
@@ -129,7 +133,10 @@ img {
 /*=========================================*/
 
 /*===================HERO==================*/
-.hero {}
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
 
 .hero-container {
     background: #2E2F42;
@@ -163,7 +170,9 @@ img {
     border-radius: 4px;
     background-color: #4D5AE5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: block;
     display: inline-flex;
+    min-width: 169px;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
@@ -179,9 +188,21 @@ img {
 
 .advantages {
     background: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.visually-hidden {}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 .advantages-list {
     display: flex;
@@ -275,6 +296,7 @@ img {
 /*===============OUR PORTFOLIO==============*/
 .portfolio {
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .our-portfolio {
@@ -291,12 +313,20 @@ img {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px 48px;
+    column-gap: 24px;
+    row-gap: 48px;
     width: calc((100%-24*2)/3);
+}
+
+.portfolio-item-style {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-item {
     padding: 32px 16px;
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-name-item {
@@ -304,8 +334,8 @@ img {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    /* 120% */
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .portfolio-name-text {
@@ -332,6 +362,8 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .item-studio {
@@ -349,6 +381,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px
 }
 
 /*========================================*/
